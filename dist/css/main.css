@@ -1,0 +1,231 @@
+* {
+  overflow: auto;
+}
+
+body {
+  background: #0a2931;
+  font-weight: 700;
+  margin: 1vh 0;
+}
+
+.header {
+  margin-left: 1rem;
+  width: 80%;
+  background-color: #ffff;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+.header .fun_side_bg_right {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  background-image: url("https://raw.githubusercontent.com/Taneristique/about_me/main/assets/images/athmosfer.JPG");
+  background-size: contain;
+  height: 100%;
+  width: 100%;
+  position: static;
+}
+
+.header .fun_side_bg_left {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4/5;
+  background-image: url("https://raw.githubusercontent.com/Taneristique/about_me/main/assets/images/athmosfer.JPG");
+  background-size: contain;
+  height: 100px;
+  width: 100%;
+  position: static;
+  height: 100%;
+  width: 100%;
+}
+
+.header__info {
+  color: rgba(54, 54, 35, 0.6);
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+.header__info_sass {
+  color: rgba(54, 54, 35, 0.6);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.header__info_sass_text_header {
+  color: #faa;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+}
+
+.header__info .fun {
+  color: currentColor;
+  font-weight: 700;
+  display: -ms-inline-grid;
+  display: inline-grid;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 2;
+  -ms-grid-columns: (minmax(1ch, 1fr))[4];
+      grid-template-columns: repeat(4, minmax(1ch, 1fr));
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  /* Next & previous buttons */
+  /* Position the "next button" to the right */
+  /* On hover, add a black background color with a little bit see-through */
+  /* Number text (1/3 etc) */
+  /* The dots/bullets/indicators */
+  /* Fading animation */
+}
+
+.header__info .fun .text1 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+.header__info .fun .text2 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+}
+
+.header__info .fun .text3 {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4/5;
+}
+
+.header__info .fun .carousel-container {
+  max-width: 1000px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+  top: 5vh;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+.header__info .fun .prev, .header__info .fun .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.header__info .fun .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.header__info .fun .prev:hover, .header__info .fun .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.header__info .fun .numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.header__info .fun .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 4.8vh 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+
+.header__info .fun .active, .header__info .fun .dot:hover {
+  background-color: #717171;
+}
+
+.header__info .fun .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.header__info .fun .paragraph_eins {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  grid-row: 2/-2;
+  position: relative;
+  top: 100vh;
+}
+
+.header__info footer {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  position: relative;
+  overflow: auto;
+}
+
+.header__info footer code {
+  color: #9ccc9c;
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+@media screen and (max-device-width: 240px) {
+  .header__info footer code {
+    font-size: 0.5em;
+  }
+}
+/*# sourceMappingURL=main.css.map */
